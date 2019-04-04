@@ -1,43 +1,35 @@
-# Mass
-A python script to find the molecular mass in g/mol of a chemical equation
+# Calcmass
+A python script to find the molecular mass in g/mol of a chemical equation  
+This is forked from [Calcmass](https://github.com/konman2/Calcmass) and there're few changes here.  
+
+## Changes
+As the requests have not been merged yet, I list some of the changes here.
+1. Bug fixed for multiple inputs([Link](https://github.com/konman2/Calcmass/pull/2))
+2. Support for float([Link](https://github.com/konman2/Calcmass/pull/3))
+3. Add an API for import convenience
 ## Example
 ```
-$ calcmass C6H12O6
-180.15588
-$ calcmass Cr2O7
-215.98800
-$ calcmass C11H22
-154.29238
-$ calcmass Al2Si2O5[OH]4
-258.16044
+$ calcmass C3H6N6O6  
+222.11634  
+
+$ calcmass H2 O2 H2O  
+H2: 2.01588  
+O2: 31.99880  
+H2O: 18.01528  
+
+$ calcmass Li1.2Ni0.13Mn0.54Co0.13O2
+85.28600
 ```
 ## Setup
-You can download using PyPi
+To use the original version, you can check [The original repo](https://github.com/konman2/Calcmass)  
 
-Using pip:
-```
-$ pip install --user calcmass
-```
-For system wide download(Not Suggested):
-```
-$ sudo pip install calcmass
-```
-Or download the zip file at https://pypi.python.org/pypi/calcmass/1.5
+If you want to use this version, you still can download using PyPi.  
 
-Then run:
+Using pip:  
 ```
-$ python setup.py install
+$ python3 -m pip install git+https://github.com/wsyxbcl/Calcmass.git
 ```
-If the calcmass command is not found add this to your .bashrc or .bash_profile
-
-MacOs:
+or just  
 ```
-export PATH=$PATH:$HOME/Library/Python/2.7/bin
+$ pip install git+https://github.com/wsyxbcl/Calcmass.git
 ```
-Linux:
-```
-export PATH=$PATH:$HOME/.local/bin
-```
-
-## License
-Mass is licensed under the MIT License - see the LICENSE file for details.
