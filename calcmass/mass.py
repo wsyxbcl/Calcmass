@@ -151,3 +151,15 @@ def calculate(comp):
         else:
             build += comp[i]
     return count
+
+def massof(chem_formula):
+    """
+    A wrap-up function for funtions above, to provide API for other programs
+
+    Receive a chemical formula(string) and return its molar mass(float)
+    """
+    multiples.clear()
+    val = add_markers(chem_formula)
+    elements = strip_coeff(val)
+    molar_mass = calculate(elements)
+    return molar_mass
