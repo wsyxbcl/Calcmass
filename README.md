@@ -31,13 +31,11 @@ Python
 ## Setup
 To use the original version, you can check [The original repo](https://github.com/konman2/Calcmass)  
 
-If you want to use this version, you still can download using PyPi.  
+If you want to use this version, you still can download using pip.  
 
-Using pip:  
-```
-$ python3 -m pip install git+https://github.com/wsyxbcl/Calcmass.git
-```
-or just  
 ```
 $ pip install git+https://github.com/wsyxbcl/Calcmass.git
 ```
+
+for ArchLinux user, you can find ``python-calcmass`` from AUR.
+
